@@ -1,0 +1,42 @@
+My Shiny App
+========================================================
+transition: rotate
+author: Keith Maclaren
+date: `r date()`
+
+How much time should I set aside for this project to get a great mark?
+
+Motivation behind the App
+========================================================
+transition: rotate
+
+There is an incentive to achieve 90% or greater in this course.
+Coursera gives you a mark of "Distinction" that will impress your employer and your friends.
+
+By using my Shiny App, I can tell you how likely you are to achieve a great mark based on the amount of time you set aside to work on the project.
+
+The Statistics
+========================================================
+transition: rotate
+The prediction is based on a normal distribution of project mark results 
+from the past 3 years of students.
+
+(Hypothetically) There is a Gaussian Distribution of students who achieved a project mark of 90% or better based on number of hours they dedicated to the project.  It has a Mean of 4 hours and a Standard Deviation of 2 hours.  
+
+Distribution of high marks by hours
+========================================================
+transition: rotate
+```{r, fig.align="center", fig.height=5, echo=TRUE}
+x <- seq(0,10,by=.1)
+y <- dnorm(x,mean=4,sd=2)
+plot(x,y, xlab="hours", ylab="distribution")
+abline(v=4)
+
+```
+Are you Ready?
+========================================================
+transition: rotate
+
+Here is the link to the Shiny App:
+
+Note - this is version 1 of the App.  Future versions could include the results of course quizzes to help improve the prediction for the project mark.
